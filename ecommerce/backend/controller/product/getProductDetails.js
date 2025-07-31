@@ -1,26 +1,26 @@
-const productModel = require("../../models/productModel")
+// controllers/product/getProductDetails.js
+import productModel from "../../models/productModel.js";
 
-const getProductDetails = async(req,res)=>{
-    try{
-        const { productId } = req.body
+const getProductDetails = async (req, res) => {
+  try {
+    const { productId } = req.body;
 
-        const product = await productModel.findById(productId)
+    const product = await productModel.findById(productId);
 
-        res.json({
-            data : product,
-            message : "Ok",
-            success : true,
-            error : false
-        })
+    res.json({
+      data: product,
+      message: "Ok",
+      success: true,
+      error: false
+    });
 
-        
-    }catch(err){
-        res.json({
-            message : err?.message  || err,
-            error : true,
-            success : false
-        })
-    }
-}
+  } catch (err) {
+    res.json({
+      message: err?.message || err,
+      error: true,
+      success: false
+    });
+  }
+};
 
-module.exports = getProductDetails
+export default getProductDetails;
