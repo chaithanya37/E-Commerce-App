@@ -9,7 +9,7 @@ const Footer = () => {
 
         <div className="flex gap-6 text-2xl">
           <a
-            href="https://github.com/your-username"
+            href="https://github.com/chaithanya37"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-gray-700 transition-colors"
@@ -18,7 +18,7 @@ const Footer = () => {
             <FaGithub />
           </a>
           <a
-            href="https://instagram.com/your-username"
+            href="https://www.instagram.com/chaithanya_chaithuu/"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-pink-500 transition-colors"
@@ -27,7 +27,7 @@ const Footer = () => {
             <FaInstagram />
           </a>
           <a
-            href="https://linkedin.com/in/your-username"
+            href="https://www.linkedin.com/in/chaithanya-kanipakam-3b5751280/"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-blue-600 transition-colors"
