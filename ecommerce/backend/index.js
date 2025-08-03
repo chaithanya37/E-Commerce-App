@@ -27,10 +27,10 @@ app.use("/api", router);
 // Serve frontend build (dist folder)
 app.use(express.static(path.join(__dirname, "../dist")));
 
-// Fallback to index.html for React Router routes
-app.get("/:path*", (req, res) => {
+app.get("/*", (req, res) => {
     res.sendFile(path.join(__dirname, "../dist", "index.html"));
 });
+
 
 
 const PORT = process.env.PORT || 8080;
