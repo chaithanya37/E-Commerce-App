@@ -9,7 +9,7 @@ export default defineConfig({
   )],
   server: {
     proxy: {
-      '/api': 'http://localhost:8080', // Your backend port
+      '/api': 'https://e-commerce-app-vkmh.onrender.com', // Your backend port
     }
   }
 });
