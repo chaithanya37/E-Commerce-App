@@ -1,22 +1,21 @@
-.customShadow{
+.customShadow {
     box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
 }
 
-/***user table***/
-.userTable{
-    @apply bg-white
-}
-.userTable th{
-    @apply border text-base font-medium
+/*** user table ***/
+.userTable {
+    @apply bg-white;
 }
 
-.userTable td{
-    @apply border text-base text-center
+.userTable th {
+    @apply border text-base font-medium;
 }
 
-/**scrollbar hidden****/
-.scrollbar-none::-webkit-scrollbar{
+.userTable td {
+    @apply border text-base text-center;
+}
+
+/** scrollbar hidden **/
+.scrollbar-none::-webkit-scrollbar {
     display: none;
 }
-
-
